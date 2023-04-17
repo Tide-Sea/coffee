@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+td {
+    padding: 2px;
+}
+
+a {
+    color: #000000;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+p {
+    font-size: 13px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.py-50 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.text-24 {
+    font-size: 24px !important;
+}
+
+.text-48 {
+    font-size: 48px !important;
+    font-weight: 800;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.main {
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding: 0 30px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    align-items: center;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 3px solid #818181;
+}
+
+.logo {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.btn-grey {
+    background-color: #C8C8C8;
+    border-radius: 99px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.btn-black {
+    background-color: #000000;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 25px;
+}
+
+.btn-black:hover {
+    background-color: #C8C8C8;
+    color: #000000;
+    padding: 15px 25px;
+}
+
+.gallery-cell {
+    width: 60%;
+    margin-right: 10px;
+}
+
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #888;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* The Close Button */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.map {
+    width: 80vw !important;
+    height: 60vh !important;
+    border-radius: 5px;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.contact_hour {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 30px 0;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .contact_hour {
+        flex-direction: column;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    h2,
+    .text-24 {
+        font-size: 20px !important;
+    }
+
+    .text-48 {
+        font-size: 30px !important;
+    }
+
+    h4 {
+        font-size: 16px !important;
+    }
+
+    .py-50 {
+        padding: 20px 0 !important;
+    }
+
+    .header {
+        padding: 0 10px !important;
+    }
+
+    .logo {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .gap-20 {
+        gap: 10px;
+    }
+
+    .main {
+        padding: 0 1vw !important;
+    }
+
+
+    .gallery-cell {
+        width: 80%;
+        margin-right: 4px;
+    }
+
+    .btn-black,
+    .btn-black:hover {
+        padding: 4px 10px;
+        border-radius: 4px;
+    }
+
+    .modal-content {
+        margin: 25% auto;
+        width: 80%;
+    }
+
+    .map {
+        width: 90vw !important;
+        height: 40vh !important;
+    }
+
+    .contact_hour {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    h2,
+    .text-24 {
+        font-size: 16px !important;
+    }
+
+    .text-48 {
+        font-size: 24px !important;
+    }
+
+    .modal-content {
+        margin: 30% auto;
+        width: 80%;
+    }
+}

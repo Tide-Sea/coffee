@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="gap-20 d-flex items-center">
+            <img src="./images/444bca44c609c24215e7140532f2bc87.svg" class="logo">
+            <h2 class="text-center">The Holy Cross Brewing Society</h2>
+        </div>
+        <div class="gap-20 d-flex ">
+            <a class="d-flex items-center gap-10" href="#intro">
+                <i class="material-icons text-24">&#xe0e0;</i>
+                <h2 class="nav-header">About us</h2>
+            </a>
+            <a href="#map" class="d-flex items-center gap-10">
+                <i class="fa fa-map-marker text-24"></i>
+                <h2 class="nav-header">Find us</h2>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="d-flex flex-column items-center text-center py-50">
+            <p class="text-48  m-0">The Holy Cross Brewing Society</p>
+            <h2 class="">Cafe in Frankfurt</h2>
+        </div>
+        <div class="w-100 pb-50" id="intro">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <img src="./images/1.jpg" class="gallery-cell" alt="1">
+                <img src="./images/2.jpg" class="gallery-cell" alt="2">
+                <img src="./images/3.jpg" class="gallery-cell" alt="3">
+                <img src="./images/4.jpg" class="gallery-cell" alt="4">
+                <img src="./images/5.jpg" class="gallery-cell" alt="5">
+            </div>
+        </div>
+        <button class="btn-black text-24 mb-20 cursor-pointer" id="myBtn">About us</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>About us</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>The best service, satisfied customers, delicious coffee from the most exotic countries and a
+                        wide
+                        range of drinks and desserts - that's all about us!
+                        <br><br>
+                        Come to The Holy Cross Brewing Society and see for yourself.
+                        <br><br>
+                        Wir warten auf Sie
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5119.5720322827565!2d8.664239520550776!3d50.09029309644922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0ea6b2c92713%3A0xf3ffca4bcc56c140!2sThe%20Holy%20Cross%20Brewing%20Society!5e0!3m2!1sen!2sus!4v1681657435775!5m2!1sen!2sus"
+                class="map" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="contact_hour">
+            <div class="contact">
+                <span class="btn-grey text-24">Contact us</span>
+                <a href="https://www.instagram.com/the_holy_cross_brewing_society/" target="_blank">
+                    <i class='fa fa-instagram text-24 text-center '></i>
+                </a>
+            </div>
+            <div class="d-flex justify-center flex-column">
+                <h2 class="text-center">Business Hours</h2>
+                <table class="justify-center">
+                    <tr>
+                        <td>Monday</td>
+                        <td>09:00–18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>09:00–18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>09:00–18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>09:00–18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>09:00–18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00–18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:00–18:00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+            console.log('about us')
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
